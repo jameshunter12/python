@@ -1,24 +1,137 @@
-<!-- Extending the project layout, as this file will do minor customizations -->
-{% extends "layouts/project.html" %}
-
-<!-- Setting up variables to customize "project" details to be specific to kangaroos -->
-{% set project = "Fastpages" %}
-{% set fastpages = "https://jameshunter12.github.io/james-fastpage/" %} 
-{% set scrumboard = "https://github.com/users/jameshunter12/projects/1/views/1" %}
-{% set repo = "https://github.com/jameshunter12/james-fastpage" %}
-
-<!-- Setting up a block replacement to customize background to RINGS -->
-{% block background %}
-    <script src="{{ url_for('static', filename='js/three.r119.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/vanta.halo.min.js') }}"></script>
-    <script>
-        VANTA.HALO({
-            el: "body",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00
-        })
-    </script>
+{% extends "layouts/base.html" %}
+{% set project = "Home" %}
+ 
+{% block body %}
+   <!-- Start of body content specific to page -->
+   <div class="px-5 py-5 mx-auto">
+       <h1 class="text-white"><strong>James' Page</strong></h1>
+       <h1c class="text-white"></h1c>
+       <h1c class="text-white"></h1c>
+       <h1c class="text-white"></h1c>
+       <div class="row">
+           <div class="col-3">
+               <div class="card">
+                   <div class="card-body">
+                   <h5 class="card-title">Main Links</h5>
+                   <p class="card-text">
+                       <ol>
+                        <a href="https://jameshunter12.github.io/james-fastpage/" class="dropdown-item">Fastpage</a>
+                        <h5 class="card-title"><strong></strong></h5>
+                        <a href="https://github.com/users/jameshunter12/projects/1" class="dropdown-item">Scrumboard</a>
+                        <h5 class="card-title"><strong></strong></h5>
+                        <a href="https://github.com/jameshunter12/james-fastpage" class="dropdown-item">Github Repository</a>
+                        <h5 class="card-title"><strong></strong></h5>
+                       </ol>
+                   </p>
+                   </div>
+               </div>
+           </div>
+           <h1 class="text-white"><strong>Week Submissions</strong></h1>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Week 0</h5>
+                        <p class="card-text">
+                            <ol>
+                                <a href="https://github.com/jameshunter12/james-fastpage/issues/2" class="dropdown-item">Issue</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/users/jameshunter12/projects/1" class="dropdown-item">Scrumboard</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/jameshunter12/james-fastpage" class="dropdown-item">Github Repository</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                            </ol>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Week 1</h5>
+                        <p class="card-text">
+                            <ol>
+                                <a href="https://github.com/jameshunter12/james-fastpage/issues/4" class="dropdown-item">Issue</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/users/jameshunter12/projects/1" class="dropdown-item">Scrumboard</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/jameshunter12/james-fastpage" class="dropdown-item">Github Repository</a>
+                                <h5 class="card-title"><strong></strong></h5>
+     
+                            </ol>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Week 2</h5>
+                        <p class="card-text">
+                            <ol>
+                                <a href="https://github.com/jameshunter12/james-fastpage/issues/3" class="dropdown-item">Issue</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/users/jameshunter12/projects/1" class="dropdown-item">Scrumboard</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/jameshunter12/james-fastpage" class="dropdown-item">Github Repository</a>
+                                <h5 class="card-title"><strong></strong></h5>
+     
+                            </ol>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Week 3</h5>
+                        <p class="card-text">
+                            <ol>
+                                <a href="https://github.com/jameshunter12/james-fastpage/issues/5" class="dropdown-item">Issue</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/users/jameshunter12/projects/1" class="dropdown-item">Scrumboard</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/jameshunter12/james-fastpage" class="dropdown-item">Github Repository</a>
+                                <h5 class="card-title"><strong></strong></h5>
+     
+                            </ol>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Week 4</h5>
+                        <p class="card-text">
+                            <ol>
+                                <a href="https://github.com/jameshunter12/james-fastpage/issues/6" class="dropdown-item">Issue</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/users/jameshunter12/projects/1" class="dropdown-item">Scrumboard</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/jameshunter12/james-fastpage" class="dropdown-item">Github Repository</a>
+                                <h5 class="card-title"><strong></strong></h5>
+     
+                            </ol>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Week 5</h5>
+                        <p class="card-text">
+                            <ol>
+                                <a href="https://github.com/jameshunter12/james-fastpage/issues/7" class="dropdown-item">Issue</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/users/jameshunter12/projects/1" class="dropdown-item">Scrumboard</a>
+                                <h5 class="card-title"><strong></strong></h5>
+                                <a href="https://github.com/jameshunter12/james-fastpage" class="dropdown-item">Github Repository</a>
+                                <h5 class="card-title"><strong></strong></h5>
+     
+                            </ol>
+                        </p>
+                        </div>
+                    </div>
+                </div>
 {% endblock %}
